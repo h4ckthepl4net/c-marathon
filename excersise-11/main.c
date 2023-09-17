@@ -3,7 +3,7 @@
 
 int main() {
     char txt[5000];
-    gets_s(txt, 5000);
+    fgets(txt, 5000, stdin);
     char* p = txt;
     int vowels = 0;
     int consonants = 0;

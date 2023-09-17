@@ -4,7 +4,7 @@
 
 int main() {
     char txt[5000];
-    gets_s(txt, 5000);
+    fgets(txt, 5000, stdin);
     int length = strlen(txt);
     for (int i = 0; i < length / 2; i++) {
         if (txt[i] != txt[length - i - 1]) {
