@@ -154,6 +154,11 @@ int main() {
 
     printf("(J) Last 'o' index is: %d\n", lastOIndex);
     printf("(O) string without duplicates: %s\n", characters);
+
+    for(int i = 0; i < wordCount; i++) {
+        free(wordArr[i]);
+    }
+    free(wordArr);
     return 0;
 }
     
